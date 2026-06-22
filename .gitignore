@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Sanal ortam
+.venv/
+venv/
+env/
+
+# Arac ciktilari (her calistirmada uretilir)
+mcp_output/
+reports/
+qdrant_storage/
+
+# Ortam degiskenleri / gizli anahtarlar
+.env
+
+# Isletim sistemi / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

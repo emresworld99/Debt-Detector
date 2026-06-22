@@ -1,0 +1,23 @@
+# --- Cekirdek ---
+tree-sitter
+tree-sitter-c
+tree-sitter-python
+tree-sitter-javascript
+tree-sitter-java
+qdrant-client
+
+# --- Orkestrasyon (Hafta 3) ---
+langgraph
+
+# --- MCP + Dashboard (Hafta 4) ---
+mcp
+streamlit
+plotly
+pandas
+
+# --- Statik analiz araci ---
+bandit
+
+# --- Opsiyonel ---
+# anthropic     # LLM aciklama/oneri katmani icin (ANTHROPIC_API_KEY gerekir)
+# semgrep       # ek statik analiz; yoksa sistem graceful degrade eder
