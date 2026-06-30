@@ -1,0 +1,19 @@
+rules:
+  - id: c-sql-string-build
+    languages: [c]
+    severity: ERROR
+    message: SQL sorgusu sprintf ile string birlestirilerek kuruluyor (injection riski).
+    patterns:
+      - pattern: sprintf($DST, $FMT, ...)
+      - metavariable-regex:
+          metavariable: $FMT
+          regex: (?i).*(select|insert|update|delete).*
+  - id: c-hardcoded-secret
+    languages: [c]
+    severity: ERROR
+    message: Kaynak koda gomulu gizli anahtar/token.
+    patterns:
+      - pattern: char *$NAME = $VAL;
+      - metavariable-regex:
+          metavariable: $VAL
+          regex: '"(sk-|AKIA|ghp_|AIza).*"'
